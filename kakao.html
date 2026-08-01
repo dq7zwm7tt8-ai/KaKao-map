@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Download Kakao Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kakao Map</title>
 
 <script>
-const ua = navigator.userAgent || navigator.vendor || window.opera;
+const ua = navigator.userAgent;
 
 if (/Android/i.test(ua)) {
-    window.location.href =
-    "https://play.google.com/store/apps/details?id=net.daum.android.map";
-}
-else if (/iPhone|iPad|iPod/.test(ua) && !window.MSStream) {
-    window.location.href =
-    "https://apps.apple.com/kr/app/kakao-map-korea-no-1-map/id304608425";
-}
-else {
-    window.location.href =
-    "https://map.kakao.com/";
+    window.location.replace("https://play.google.com/store/apps/details?id=net.daum.android.map");
+} else if (/iPhone|iPad|iPod/i.test(ua)) {
+    window.location.replace("https://apps.apple.com/kr/app/id304608425");
+} else {
+    window.location.replace("https://map.kakao.com/");
 }
 </script>
 
 </head>
-
 <body>
 Redirecting...
 </body>
