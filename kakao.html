@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kakao Map</title>
+<title>Download KakaoMap</title>
 
 <script>
 const ua = navigator.userAgent;
@@ -11,7 +10,7 @@ const ua = navigator.userAgent;
 if (/Android/i.test(ua)) {
     window.location.replace("https://play.google.com/store/apps/details?id=net.daum.android.map");
 } else if (/iPhone|iPad|iPod/i.test(ua)) {
-    window.location.replace("https://apps.apple.com/kr/app/id304608425");
+    window.location.replace("https://apps.apple.com/kr/app/kakaomap-korea-no-1-map/id304608425");
 } else {
     window.location.replace("https://map.kakao.com/");
 }
@@ -21,4 +20,3 @@ if (/Android/i.test(ua)) {
 <body>
 Redirecting...
 </body>
-</html>
